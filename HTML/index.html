@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalTrotter Agência de Viagens</title>
+    <style> /* iniciando a seção de estilo - css- da pagina */
+        body {
+            font-family: Arial, sans-serif; /* fonte principal e fonte genérica para o body do documento, caso a fonte principal não esteja disponível */
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid rgb(202, 24, 71);
+            border-radius: 5px;
+            background-color: #ed3954;
+        } /* estilização do conteiner */ 
+        h2 { 
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid rgb(203, 152, 171);
+            border-radius: 5px;
+        } /*  Estilizado inputs e labels */
+        input[type="submit"] {
+            background-color: #c298a9;
+            color: rgb(255, 255, 255);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        } 
+        input[type="submit"]:hover {
+            background-color: #00b312;
+        } /* estilizando botão de enviar */
+        /* Finalizando estilização da caixa de cadastro */
+        /* O estilo também poderia ser criado em um arquivo a parte; melhor prática*/
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./midias/logo1563x1563.png" alt="Logo da Agência de Viagens" width="100">
+        </div>
+        <h1>Globetrotter</h1>
+        <div class="contact">
+            <div class="support">
+                <p>Suporte</p>
+                <p>duvidas@globetrotter.com.br</p>
+            </div>
+            <div class="phone">
+                <p>Contato</p>
+                <p>0800-987-6543</p>
+            </div>
+        </div>
+    </header> 
+
+    <div class="container">
+        <h2>Cadastro de Usuário</h2>
+        <form action="processar_cadastro.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="passaporte">Passaporte:</label>
+            <input type="text" id="passaporte" name="passaporte" required title="BR123456">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <input type="submit" value="Cadastrar">
+        </form>
+    </div>
+
+    <footer>
+        <div class="logo">
+            <img src="./midias/logo1563x1563.png" alt="Logo da Agência de Viagens" width="100">
+        </div>
+        <div> <p>&copy; 2023 Agência de Viagens Globetrotter</p>
+        </div>
+    </footer>
+</body>
+</html>
