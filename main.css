@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body > header {
+    background-color: rgb(32, 33, 34);
+    padding: 16px;
+    color: rgb(253, 236, 0);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline;
+    padding: 5px;
+}
+
+header li a {
+    color: rgb(253, 236, 0);
+}
+
+.container {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.articles article img {
+    height: 180px;
+    margin-top: 10px;
+}
+
+.articles article {
+    width: 30%;
+    text-align: justify;
+}
+
+section {
+    padding: 16px 0;
+}
+
+
+section .h2 .articles article{
+    margin-bottom: 16px;
+}
+
+.articles article h3 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.articles article a {
+    background-color: rgb(7, 7, 6);
+    color: #fff; /* Corrigi o valor da cor */
+    padding: 5px 10px;
+    display: inline-block;
+    border-radius: 7px; /* Adicione o ponto e vírgula aqui */
+    border: none;
+    cursor: pointer;
+    margin-top: 5px; 
+}
+
+#esportes {
+    background-color:rgba(186, 196, 0, 0.077);
+}
