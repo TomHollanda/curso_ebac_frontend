@@ -18,11 +18,13 @@ header .container {
 
 header li {
     display: inline;
-    padding: 5px;
+    font-weight: bold;
+    margin-left: 16px;
 }
 
 header li a {
     color: rgb(253, 236, 0);
+    text-decoration: none;
 }
 
 .container {
@@ -37,7 +39,7 @@ header li a {
 }
 
 .articles article img {
-    height: 180px;
+    width: 100%;
     margin-top: 10px;
 }
 
@@ -69,8 +71,22 @@ section .h2 .articles article{
     border: none;
     cursor: pointer;
     margin-top: 5px; 
+    font-weight: bold;
 }
 
 #esportes {
     background-color:rgba(186, 196, 0, 0.077);
 }
+
+#economia {
+    background-color:rgba(98, 196, 0, 0.077);
+}
+
+#politica {
+    background-color:rgba(0, 196, 180, 0.077);
+}
+
+#meio-ambiente {
+    background-color:rgba(196, 52, 0, 0.077);
+}
+
