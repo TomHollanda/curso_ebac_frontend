@@ -6,16 +6,15 @@
 }
 
 h1::first-letter {
-    color: #FED75A; /* Substitua isso pela cor desejada */
+    color: #FED75A; 
     font-size: 60px;
     text-shadow: 2px 2px 4px rgba(253, 220, 2, 0.713);
-    backdrop-filter: brightness(1.5); /* Ajuste os valores conforme necessário */
-    background-color: rgb(0, 0, 0); /* Cor do fundo com transparência */
-    line-height: 1.5; /* Ajusta a altura da linha conforme necessário */
+    backdrop-filter: brightness(1.5); 
+    background-color: rgb(0, 0, 0);
+    line-height: 1.5; 
     padding: 16px;
-    
-    
 }
+
 body > header {
     background-color: #FED75A;
     padding: 5px;
@@ -37,6 +36,11 @@ header li {
 header li a {
     color: rgb(0, 0, 0);
     text-decoration: none;
+}
+
+header li a:hover {
+    color:rgb(255, 1, 1);
+    ;
 }
 
 .container {
@@ -76,21 +80,28 @@ section h2 .articles article{
     position:relative;
     margin-bottom: 20px;
 }
+.articles article p::first-letter {
+    font-size:xx-large;
+    background-color: rgba(0, 0, 0, 0.017); 
+}
 
 .articles article a {
-    background-color: rgba(7, 7, 6, 0.538);
-    color: rgba(255, 255, 255, 0.516); 
-    padding: 5px 10px;
-    display: inline-block;
+    background-color: rgba(7, 7, 6, 0.36);
+    color: rgba(13, 12, 12, 0.531); 
+    padding: 3px 3px;
     border-radius: 7px; 
     border: none;
-    cursor: pointer;
-    font-weight: 200;
     position:absolute;
     bottom: -20px;
     right: 5px;
+    text-decoration: none;
     
 }
+
+.articles article a:hover {
+    background-color: #FED75A;
+}
+
 
 #esportes {
     background-color:rgba(186, 196, 0, 0.077);
