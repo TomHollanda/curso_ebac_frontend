@@ -2,17 +2,29 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family:Georgia,"Times New Roman",Times,serif;
 }
 
-body > header {
-    background-color: rgb(32, 33, 34);
+h1::first-letter {
+    color: #FED75A; /* Substitua isso pela cor desejada */
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(253, 220, 2, 0.713);
+    backdrop-filter: brightness(1.5); /* Ajuste os valores conforme necessário */
+    background-color: rgb(0, 0, 0); /* Cor do fundo com transparência */
+    line-height: 1.5; /* Ajusta a altura da linha conforme necessário */
     padding: 16px;
-    color: rgb(253, 236, 0);
+    
+    
+}
+body > header {
+    background-color: #FED75A;
+    padding: 5px;
+    color: rgb(1, 1, 1);
 }
 
 header .container {
     display: flex;
-    align-items: center;
+    align-items:center;
     justify-content: space-between;
 }
 
@@ -23,13 +35,22 @@ header li {
 }
 
 header li a {
-    color: rgb(253, 236, 0);
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 
 .container {
     width: 1366px;
     margin: 0 auto;
+}
+
+section {
+    padding: 16px 0;
+    height: 50%;
+}
+
+section h2 .articles article{
+    margin-bottom: 16px;
 }
 
 .articles {
@@ -40,38 +61,35 @@ header li a {
 
 .articles article img {
     width: 100%;
+    height: 40%;
     margin-top: 10px;
+}
+.articles article h3 {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    color:rgb(149, 102, 75)
 }
 
 .articles article {
     width: 30%;
     text-align: justify;
-}
-
-section {
-    padding: 16px 0;
-}
-
-
-section .h2 .articles article{
-    margin-bottom: 16px;
-}
-
-.articles article h3 {
-    margin-top: 16px;
-    margin-bottom: 16px;
+    position:relative;
+    margin-bottom: 20px;
 }
 
 .articles article a {
-    background-color: rgb(7, 7, 6);
-    color: #fff; /* Corrigi o valor da cor */
+    background-color: rgba(7, 7, 6, 0.538);
+    color: rgba(255, 255, 255, 0.516); 
     padding: 5px 10px;
     display: inline-block;
-    border-radius: 7px; /* Adicione o ponto e vírgula aqui */
+    border-radius: 7px; 
     border: none;
     cursor: pointer;
-    margin-top: 5px; 
-    font-weight: bold;
+    font-weight: 200;
+    position:absolute;
+    bottom: -20px;
+    right: 5px;
+    
 }
 
 #esportes {
@@ -79,14 +97,14 @@ section .h2 .articles article{
 }
 
 #economia {
-    background-color:rgba(98, 196, 0, 0.077);
+    background-color:rgba(67, 68, 65, 0.077);
 }
 
 #politica {
-    background-color:rgba(0, 196, 180, 0.077);
+    background-color:rgba(186, 196, 0, 0.077);
 }
 
-#meio-ambiente {
-    background-color:rgba(196, 52, 0, 0.077);
+#tecnologia {
+    background-color:rgba(67, 68, 65, 0.077);
 }
 
