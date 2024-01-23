@@ -236,7 +236,7 @@ form input,
 form textarea,
 button {
     display: block;
-    width: 100%; /* Alterado para 100% para ocupar a largura total */
+    width: 100%; 
     margin-bottom: 8px;
     padding: 8px;
 }
@@ -261,7 +261,7 @@ input:focus, textarea:focus {
     outline-color: #f47521;
 }
 
-footer {
+#footer {
     background-color: #f47521;
     color: #23252b;
     padding: 16px 0;
@@ -312,7 +312,7 @@ footer {
     margin: 10px auto 0 7%;
 }
 
-/* styles top button */
+/* estilos para o botão */
 
 #btnVoltarAoTopo {
     display: none;
@@ -341,20 +341,20 @@ footer {
     border-color: #f96400;
 }
 
-/* Media queries para tornar o site responsivo */
+/* Media queries para tornar o site responsivo (retirar - não está bom) */
 
 @media screen and (max-width: 768px) {
     .text-content {
-        width: 100%; /* Altera a largura para ocupar 100% em telas menores */
+        width: 100%; /* Altera a largura para ocupar 100% nas telas menores */
     }
 
     .video-container {
-        width: 100%; /* Altera a largura para ocupar 100% em telas menores */
+        width: 100%; /* ... telas menores */
     }
 
     form input,
     form textarea,
     button {
-        width: 100%; /* Altera a largura para ocupar 100% em telas menores */
+        width: 100%; /* ... telas menores */
     }
 }
