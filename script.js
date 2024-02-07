@@ -1,45 +1,24 @@
-// script.js
+document.getElementById('comparisonForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
 
-// btnVoltarAoTopo
+    
+    let numberA = parseFloat(document.getElementById('number_a').value.replace(',', '.'));
+    let numberB = parseFloat(document.getElementById('number_b').value.replace(',', '.'));
 
-document.addEventListener('DOMContentLoaded', function() {
-    var btnVoltarAoTopo = document.getElementById('btnVoltarAoTopo');
+    
+    let messageElement = document.getElementById('message');
 
-    btnVoltarAoTopo.addEventListener('click', function() {
-        // controle: rolagem botão
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    });
 
-    // controle: exibição botão
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 100) {
-            btnVoltarAoTopo.style.display = 'block';
+    if (!isNaN(numberA) && !isNaN(numberB)) {
+        
+        if (numberB > numberA) {
+            
+            messageElement.innerText = '* O número B é maior que o número A. Formulário válido.';
+            messageElement.style.color = 'blue';
         } else {
-            btnVoltarAoTopo.style.display = 'none';
+
+            messageElement.innerText = '* O número B deve ser maior que o número A. Formulário inválido.';
+            messageElement.style.color = 'red';
         }
-    });
+    }
 });
-
-//muda a cor do btnVoltarAoTopo if footer ( ou mudar background no css)
-
-$(document).ready(function () {
-    var btnVoltarAoTopo = $('#btnVoltarAoTopo');
-    var footer = $('#footer');
-
-    $(window).scroll(function () {
-        if ($(window).scrollTop() + $(window).height() > footer.offset().top) {
-            btnVoltarAoTopo.css('background-color', '#000000');
-        } else {
-            btnVoltarAoTopo.css('background-color', '#000000');
-        }
-    });
-
-    btnVoltarAoTopo.click(function () {
-        $('html, body').animate({ scrollTop: 0 }, 500);
-    });
-});
-
-
