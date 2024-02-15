@@ -4,131 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kasulixo-Konosuba!</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="script.js"></script>
+    <title>Calculadora-de-medias</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gluten:wght@500&family=Roboto&family=Uncial+Antiqua&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-fmiqXO3VTvP+Pom/GezUJMOeI7gt5Cx5gzZlFozR4mgKdu6t3h42CfyB1PMVVNQn2EZgG41C0DTm52ZxEf5ApA==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <h1>Kazulixo!</h1>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#manga">MANGA</a>
-                    </li>
-                    <li>
-                        <a href="#anime">ANIME</a>
-                    </li>
-                    <li>
-                        <a href="#filme">FILME</a>
-                    </li>
-                    <li>
-                        <a href="#extra">EXTRAS</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <div class="content-wrap">
-        <div class="content-image">
-        </div>
+    <div class="container">
+
+        <header>
+            <img src="/_images/logo.png" alt="capelo e diploma">
+            <h1>Calculadora de medias</h1>
+        </header>
+
+        <form id="form-atividade">
+            <input type="text" id="nome-atividade"required placeholder="Nome da Atividade"/>
+            <input type="number" id="nota-atividade"required placeholder="Nota da atividade" min="0" max="10"/>
+            <button type="submit">Add +</button>
+
+        </form>
+
+        <table cellspacing="0">
+            <caption>Boletim</caption>
+            <thead>
+                <tr>
+                    <th>Nome da atividade</th>
+                    <th>Nota da atividade</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
+
+            <tbody>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td>Media final</td>
+                    <td id="media-final-valor">---</td>
+                    <td id="media-final-resultado">---</td>
+                </tr>
+            </tfoot>
+
+        </table>
     </div>
-    <div class="konosuba-content">
-        <div class="text-content">
-            <h1>KONOSUBA - God's blessing on this wonderful world!</h1>
-            <p>Após um acidente de trânsito, a breve e desapontadora vida de Kazuma Sato deveria ter acabado, mas ele acorda e vê uma belíssima garota diante dele. Ela diz ser Aqua, uma deusa, e lhe pergunta se ele gostaria de ir para outro mundo, levando consigo apenas uma coisa deste mundo. Kazuma decide levar a própria deusa consigo, e eles são transportados para um mundo de fantasia cheio de aventura, dominado por um rei-demônio.</p>
-        </div>
-        <div class="video-container">
-            <iframe width="350" height="315" src="https://www.youtube.com/embed/N1AO7k2o78g" frameborder="0" allowfullscreen></iframe>
-            <a href="https://www.youtube.com/embed/N1AO7k2o78g" target="_blank">
-                <button>COMEÇAR A ASSISTIR</button>
-            </a>
-        </div>
-    </div>
-</div>
-    <section id="manga">
-        <div class="manga-body">
-            <h1>LEIA AQUI</h1>
-            <iframe src="https://mangaschan.net/26595715/kono-subarashii-sekai-ni-shukufuku-wo-capitulo-1/" width="900" height="600" frameborder="0"></iframe>
-        </div>
-    </section>
-    <section id="anime">
-        <div class="anime-body">
-            <h1>ASSISTA AQUI</h1>
-            <iframe src="https://www.crunchyroll.com/pt-br/series/GYE5K3GQR/konosuba--gods-blessing-on-this-wonderful-world" width="900" height="600" frameborder="0"></iframe>
-        </div>
-    </section>
-    <!-- <div id="fb-root"></div>
-    <script async defer src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.2"></script>
-    <h1>My Video Player</h1>
-    <div class="fb-video"
-    data-href="https://www.facebook.com/FacebookDevelopers/posts/10151471074398553"
-    data-width="500"
-    data-allowfullscreen="true"></div> -->
-    <div id="fb-root"></div>
-        <div class="filme-body">
-            <h1>MOVIE</h1>
-            <iframe src="https://www.youtube.com/embed/oG4_kIR3LbU" width="900" height="600" frameborder="0"></iframe>
-        </div>
-    </section>
-    <section id="extra">
-        <div class="extra-body">
-            <h1>SPINOFF</h1>
-            <iframe src="https://cgtranslations.me/dustspinoff/" width="900" height="600" frameborder="0"></iframe>
-        </div>
-    </section>
-    <section id="comments">
-        <div class="reaction">
-            <h2></h2>
-            <div class="comments-methods">
-                <div>
-                    <h3>ESCREVER UM COMENTÁRIO</h3>
-                    <form>
-                        <input type="text" placeholder="Nome" required>
-                        <textarea placeholder="Sua mensagem" required></textarea>
-                        <button type="submit">Enviar</button>
-                    </form>
-                </div>
-                <div class="social">
-                    <h3>ACOMPANHE A HISTÓRIA</h3>
-                    <ul class="social-links">
-                        <li> 
-                            <a href="https://twitter.com/intent/tweet?text=%E3%82%A2%E3%83%8B%E3%83%A1%E3%80%8C%E3%81%93%E3%81%AE%E7%B4%A0%E6%99%B4%E3%82%89%E3%81%97%E3%81%84%E4%B8%96%E7%95%8C%E3%81%AB%E7%A5%9D%E7%A6%8F%E3%82%92%EF%BC%813%E3%80%8D%E5%85%AC%E5%BC%8F%E3%82%B5%E3%82%A4%E3%83%88&url=konosuba.com%2F3rd%2F&hashtags=%E3%82%A2%E3%83%8B%E3%83%A1%E3%81%93%E3%81%AE%E3%81%99%E3%81%B03" title="Kasulixo no Twitter" target="_blank">
-                                <img src="imagens/x-logo.png" alt="Twitter">
-                            </a>
-                        </li>
-                        <li> 
-                            <a href="https://www.youtube.com/@kazusoqlixo" title="Kasulixo no Youtube" target="_blank">
-                                <img src="imagens/youtube.png" alt="Youtube">
-                            </a>
-                        </li>
-                    <ul class="Official">
-                        <li> 
-                            <a href="http://konosuba.com/3rd/" target="_blank">
-                                <img src="imagens/bnr_radio.png" alt="Official-site">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <button id="btnVoltarAoTopo" onclick="voltarAoTopo()">
-    </button>
-    </button>
-    <script src="/script.js"></script>
+    <script src="/main.js"></script>
 </body>
-<footer id="footer">
-    <div>
-        <p>
-            &copy; Kazulixo - Todos dos direitos reservados - 2024
-        </p>
-    </div>
-</footer>
+
 </html>
