@@ -1,6 +1,6 @@
 Tom  Hollanda
 
-Esta é uma página de galeria de fotos, com a capacidade de adicionar novas imagens por meio de um formulário. 
+Esta é uma página web de galeria de fotos, com a capacidade de adicionar novas imagens por meio de um formulário. 
 
 HTML:
 
