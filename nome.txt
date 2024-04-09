@@ -1,1 +1,27 @@
 Tom  Hollanda
+
+Esta é uma página web de galeria de fotos, com a capacidade de adicionar novas imagens por meio de um formulário. 
+
+HTML:
+
+header: Define o cabeçalho da página, com um título "Galeria de Fotos" e um botão "Nova Imagem +".
+form: Define um formulário para inserir uma nova imagem, com um campo de entrada para a URL da imagem e botões para adicionar e cancelar.
+ul: Define uma lista não ordenada para exibir as imagens.
+li: Define cada item da lista, com uma imagem e um link para visualizar a imagem em tamanho real.
+img: Define a imagem a ser exibida na galeria.
+div.overlay-imagem-link: Define uma sobreposição para cada imagem na galeria, que aparece quando o mouse está sobre a imagem.
+CSS:
+
+Estiliza o layout da página, definindo margens, preenchimentos e estilos de fonte padrão.
+Estiliza o cabeçalho da página, definindo cores de fundo, cor do texto e alinhamento.
+Estiliza o formulário de inserção de imagem, definindo cores de fundo, preenchimento e alinhamento.
+Estiliza os botões, definindo cores de fundo, bordas, peso da fonte e cursor do mouse.
+Estiliza a lista de imagens, usando flexbox para layout e definindo largura máxima para os itens da lista.
+Estiliza as imagens, ajustando sua largura para 100% do contêiner.
+Estiliza a sobreposição de imagem, definindo cores de fundo, posição e transição de opacidade.
+JavaScript:
+
+Usa jQuery para adicionar funcionalidade ao botão "Nova Imagem +" e ao botão "Cancelar".
+Quando o botão "Nova Imagem +" é clicado, o formulário é exibido.
+Quando o botão "Cancelar" é clicado, o formulário é oculto.
+Quando o formulário é enviado, o endereço da nova imagem é obtido e um novo item de lista é criado para exibir a nova imagem na galeria.
