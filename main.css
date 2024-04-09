@@ -85,3 +85,13 @@ ul li img {
 ul li:hover .overlay-imagem-link {
     opacity: 1;
 }
+
+.botao-deletar {
+    background-color: #cc4b2763;
+    color: #fff;
+    border: none;
+    padding: 6px 10px;
+    margin-top: 6px;
+    margin-left: 25px;
+    cursor: pointer;
+}
