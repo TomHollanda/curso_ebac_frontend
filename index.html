@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>To-<br>DoList</h1>
+            <div class="input-section">
+                <input type="text" placeholder="Add a to-do . . ." class="task-input">
+                <button class="add-task-button">Add</button>
+            </div>
+        </header>
+        <h3>Task-List</h3>
+        <ul class="todos-list"></ul>
+        <ul class="completed-list"></ul> 
+        <div class="filter-section">
+            <button class="filter-btn" data-status="all">All</button>
+            <button class="filter-btn" data-status="pending">Pending</button>
+            <button class="filter-btn" data-status="completed">Completed</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
