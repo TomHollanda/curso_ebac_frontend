@@ -32,17 +32,20 @@ $(document).ready(function() {
                     filterTodos($(".filter-btn.active").data("status"));
                 }
             }
-        }).append($("<span>").text(taskText))
-        .append($("<button>", {
-            "class": "delete-btn",
-            text: "X",
-            on: {
-                click: function(e) {
-                    e.stopPropagation();
-                    $(this).closest(".todo-item").remove();
+        }).append(
+            $("<input>", { type: "checkbox" }), // Adiciona a caixa de seleção
+            $("<span>").text(taskText), // Texto da tarefa
+            $("<button>", {
+                "class": "delete-btn",
+                text: "X",
+                on: {
+                    click: function(e) {
+                        e.stopPropagation();
+                        $(this).closest(".todo-item").remove();
+                    }
                 }
-            }
-        }));
+            })
+        );
         return todoItem;
     }
     
