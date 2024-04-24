@@ -5,29 +5,40 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
 .container {
-    max-width: 1024px;
+    max-width: 100%;
     width: 100%;
     margin: 0 auto;
+    padding-left: 1%;
+    color: #F9F9FA;
+    filter: brightness(120%);
 }
 
 header {
-    background-color: #192a56;
-    padding-top: 16px;
+    background-color: black;
+    padding-top: 10px;
     margin: 0 auto;
+    
 }
 
 header > .container {
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px;
+    padding: 16px 90px 16px 90px;
 
 }
 
 nav {
-    background-color: #575fcf;
+    background-color: black;
     padding: 16px 0;
+    padding-left: 90px;
+    display: none;
+    border-top: 1px solid #999999;
 }
 
 nav li {
@@ -40,8 +51,9 @@ nav li {
 }
 
 nav li a {
-    color: #fff;
+    color: #8D8D8D;
     text-decoration: none;
+    font-weight: lighter;
 }
 
 .menu-hbg {
@@ -54,4 +66,92 @@ nav li a {
     background-color: #fff;
     display: block;
     margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.logo {
+width: 80px;
+height: 80px;
+position: relative;
+}
+
+.circle {
+width: 70px;
+height: 70px;
+border: 2px solid rgb(235, 231, 231); 
+border-radius: 50%; 
+background-color: transparent; 
+position: absolute;
+top: 10px;
+}
+
+.circle:nth-child(1) {
+left: 5px;
+}
+
+.circle:nth-child(2) {
+left: 20px; 
+}
+
+.logo h1 {
+    margin-top: 30%;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#about-us img {
+    width: 25%;
+    margin-right: 2%;
+}
+
+section {
+    padding: 4%;
+    text-align: justify;
+}
+
+section h2 {
+    margin-bottom: 2%;
+}
+
+.lista-veiculos {
+    flex-wrap: wrap;
+}
+
+.lista-veiculos li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 2%;
+}
+
+.lista-veiculos li img {
+    max-width: 100%;
+}
+
+.lista-veiculos li h3 {
+    margin: 2%;
+}
+
+.item-central {
+    margin: 0 5%;
+}
+
+.lista-veiculos li button{
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #c95909;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.price {
+    margin: 16px 0;
+    display: block;
 }
