@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing:  border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: lighter;
 }
 
 body {
@@ -19,14 +20,22 @@ body {
     filter: brightness(120%);
 }
 
-header {
+header, footer {
     background-color: black;
     padding-top: 10px;
     margin: 0 auto;
     
 }
 
-header > .container {
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+header > .container,
+footer > .container {
     justify-content: space-between;
     align-items: center;
     padding: 16px 90px 16px 90px;
@@ -46,7 +55,7 @@ nav li {
     display: inline;
     margin-right: 16px;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: lighter;
     text-transform: uppercase;
 }
 
@@ -94,7 +103,13 @@ left: 20px;
 }
 
 .logo h1 {
-    margin-top: 30%;
+    margin-top: 20%;
+}
+
+.logo h1::first-letter {
+    color: #FFD700; 
+    font-weight:lighter;
+    font-size: 110%; 
 }
 
 .container-flex {
@@ -109,10 +124,15 @@ left: 20px;
 section {
     padding: 4%;
     text-align: justify;
+    letter-spacing: 1px;
 }
 
 section h2 {
     margin-bottom: 2%;
+    color: #F9F9FA;
+    font-size: 30px;
+    font-weight: bold;
+    
 }
 
 .lista-veiculos {
@@ -131,13 +151,14 @@ section h2 {
 
 .lista-veiculos li h3 {
     margin: 2%;
+    font-weight: bold;
 }
 
 .item-central {
     margin: 0 5%;
 }
 
-.lista-veiculos li button{
+button{
     display: block;
     width: 100%;
     padding: 8px 0;
@@ -154,4 +175,50 @@ section h2 {
 .price {
     margin: 16px 0;
     display: block;
+    font-weight: bold;
+}
+
+.price del {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.form-campo {
+    margin-bottom: 16px;
+
+}
+
+.form-campo label{
+    font-weight: bold;
+    
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+} 
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 360px;
+    color: #F9F9FA;
+}
+
+form button {
+    max-width: 120px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
 }
