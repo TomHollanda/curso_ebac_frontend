@@ -2,12 +2,26 @@ $(document).ready(function(){
     $('#carousel-imagens').slick({
         autoplay:true,
     });
+    
     $('.menu-hbg').click(function(){
         $('nav').slideToggle();
     })
-    $('#fone').mask ('(00) 00000-0000', {
-        placeholder: '(99) 9 9999-9999'
-    })
+
+    $('#fone').mask ('(00) 00000-0000')
+
+    $('#cpf').mask ('000.000.000.-00')
+
+    $('#cep').mask('00000-000').blur(function () {
+        const vl = this.value;
+
+        $.get('https://viacep.com.br/ws/'+vl+'/json/', function(dados){
+            $('#rua').val(dados.logradouro);
+            $('#bairro').val(dados.bairro);
+            $('#cidade').val(dados.localidade);
+            $('#uf').val(dados.uf);
+        });
+    });
+
     $('form').validate({
         rules: {
             nome: {
@@ -54,6 +68,12 @@ $(document).ready(function(){
             scrollTop: destino.offset().top
         }, 800)
     })
+
+    $(document).ready(function() {
+        $('.chat').click(function() {
+            alert("OLÁ! NOSSO HORÁRIO DE ATENDIMENTO VIA CHAT É DAS 8H30 ÀS 21H45 DE SEGUNDA A SEXTA-FEIRA (HORÁRIO DE BRASÍLIA - EXCETO FERIADOS).\n\nVOCÊ PODE FALAR COM A GENTE TAMBÉM PELO 0800 E POR E-MAIL POR INTERMÉDIO DA OPÇÃO 'FALE CONOSCO'.\n\nAGRADECEMOS A SUA COMPREENSÃO!");
+        });
+    });
 
 });
 
