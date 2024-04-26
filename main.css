@@ -135,21 +135,21 @@ section h2 {
     
 }
 
-.lista-veiculos {
+.listaVeiculos {
     flex-wrap: wrap;
 }
 
-.lista-veiculos li {
+.listaVeiculos li {
     list-style: none;
     max-width: 30%;
     margin-bottom: 2%;
 }
 
-.lista-veiculos li img {
+.listaVeiculos li img {
     max-width: 100%;
 }
 
-.lista-veiculos li h3 {
+.listaVeiculos li h3 {
     margin: 2%;
     font-weight: bold;
 }
