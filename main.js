@@ -2,7 +2,7 @@ $(document).ready(function(){
     $('#carousel-imagens').slick({
         autoplay:true,
     });
-    
+
     $('.menu-hbg').click(function(){
         $('nav').slideToggle();
     })
@@ -70,11 +70,25 @@ $(document).ready(function(){
     })
 
     $(document).ready(function() {
-        $('.chat').click(function() {
-            alert("OLÁ! NOSSO HORÁRIO DE ATENDIMENTO VIA CHAT É DAS 8H30 ÀS 21H45 DE SEGUNDA A SEXTA-FEIRA (HORÁRIO DE BRASÍLIA - EXCETO FERIADOS).\n\nVOCÊ PODE FALAR COM A GENTE TAMBÉM PELO 0800 E POR E-MAIL POR INTERMÉDIO DA OPÇÃO 'FALE CONOSCO'.\n\nAGRADECEMOS A SUA COMPREENSÃO!");
+        $('.chat').click(function(event) {
+            var now = new Date();
+            var dayOfWeek = now.getDay();
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            
+            
+            if (dayOfWeek >= 1 && dayOfWeek <= 5 && (hours > 8 || (hours === 8 && minutes >= 00)) && hours < 18 || (hours === 18 && minutes <= 45)) {
+                
+                window.open("https://web.whatsapp.com/", "_blank");
+            } else {
+                
+                alert("OLÁ! NOSSO HORÁRIO DE ATENDIMENTO VIA CHAT É DAS 8H30 ÀS 18H45 DE SEGUNDA A SEXTA-FEIRA (HORÁRIO DE BRASÍLIA - EXCETO FERIADOS).\n\nVOCÊ PODE FALAR COM A GENTE TAMBÉM PELO 0800 E POR E-MAIL.\n\nAGRADECEMOS A SUA COMPREENSÃO!");
+            }
+            event.preventDefault();
         });
     });
-
+    
+    
 });
 
 
