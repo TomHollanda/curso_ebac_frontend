@@ -1,0 +1,57 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style:none;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu {
+    display: flex;
+    
+}
+
+.menu li {
+    margin-left: 10px;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px;
+}
+
+.material-symbols-outlined {
+    display: none;
+    color: blue;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.material-symbols-outlined:hover {
+    color: orange;
+}
+
+
+@media screen and (max-width: 767px) {
+    .menu {
+        display: none; /* Oculta o menu em dispositivos móveis */
+    }
+
+    .material-symbols-outlined {
+        display: block; /* Exibe o ícone do menu hamburguer em dispositivos móveis */
+        align-items: center;
+        
+    }
+}
