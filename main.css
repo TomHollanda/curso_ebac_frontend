@@ -1,26 +1,31 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    list-style:none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
     font-size: 1rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
 }
 
 a {
     text-decoration: none;
 }
 
+body {
+    background-color: #F5F5F5;
+}
+
+/* Header */
 .header {
     display: flex;
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
-    padding: 20px;
+    padding: 1.5%;
 }
 
+/* Menu */
 .menu {
     display: flex;
-    
 }
 
 .menu li {
@@ -47,82 +52,163 @@ a {
     color: orange;
 }
 
+/* Buttons */
 .elementor-button-link {
     font-size: 1rem;
     font-weight: 700;
-    fill: #fff;
     color: #fff;
     background-color: orange;
     border-radius: 50px;
     padding: 15px;
 }
 
+/* Logo */
 .logo-img {
     max-width: 200px;
     max-height: 100px;
 }
 
-body {
-    background-color: #F5F5F5;
-}
+/* Container-genérico*/
 
-.container-start {
-    display: block;
-    width: 100%;
+.container-section {
+    width: 100vw;
     height: 60vh;
-    background: radial-gradient(circle, #348EC2, #348EC2);
+    background-color: rgba(0, 0, 255, 0.1); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.container-start-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5%;
-    padding: 5% 9% 5% 9%;
+/* Container 1*/
+
+.background-container {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://babyeventos.com.br/wp-content/uploads/2023/05/aluguel-de-toboga-inflavel-para-festa.jpg');
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.container-start-grid img {
-    border-radius: 2%; 
-    box-shadow: 0 4px 8px #000000b2; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.banner {
+    width: 100%;
+    height: 100%;
+    background-color: #0505055a;
+    margin: 10%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
 }
-.container-start-grid p {
+
+.banner h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: lighter;
     color: #F5F5F5;
-    font-size: 2.1rem;
-    text-align:initial;
-    text-shadow: #F5F5F5;
-    font-weight: bold;
-    letter-spacing: 0.1rem;
+    padding-right: 2%;
+}
+
+.banner p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #F5F5F5;
+    padding-right: 2%;
+}
+
+.banner button {
+    padding: 1rem;
+    border-radius: 10px;
+    border: #F5F5F5;
+    margin-right: 2%;
+}
+
+.banner button:hover {
+    background-color: #348EC2;
+    color:#F5F5F5;
+    border: 2px solid #f5f5f5;
+
+}
+
+/*Container 2*/
+.section-itens-title {
+    text-align: center;
+    width: 100%;
+    padding-top: 5%;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.custom-container {
+    max-width: 85vw;
+}
+
+.carousel-inner img {
+    max-height: 50vh; 
+    object-fit: cover;
 }
 
 
+/* Media Queries */
+@media screen and (max-width: 767px) {
+    .container-section {
+        height: 55vh; /* Ajusta a altura para telas menores se necessário */
+    }
+
+    .custom-container {
+        max-width: 100vw;
+    }
+
+    .carousel-inner img {
+        max-height: 20vh; 
+    }
+}
+
+
+
+
+
+
+
+
+
+/* Container Start */
+
+/* List Group - Nossos brinquedos*/
 .list-group {
     color: #F5F5F5;
-    font-size: 2.1rem;
+    font-size: 2rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
+    background-color: transparent;
+    border: none;
 }
 
 .list-group-item::before {
-    content: "★"; 
-    margin-right: 10px; 
+    content: "★";
+    margin-right: 10px;
     color: #FFF350;
 }
 
 .list-group-item {
     padding-top: 3%;
+    background-color: transparent;
+    border: none;
+    color: inherit;
 }
 
-.section-itens-title {
-    text-align: center;
-    width: 100%;
-    font-size: 2rem;
-    font-weight: lighter;
-}
+/* Custom Container */
 
+
+
+/* Grid Items */
 .grid-itens {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px; /* Espaçamento entre as colunas */
+    gap: 16px;
     padding: 7vw 8vw 14vw 8vw;
 }
 
@@ -135,17 +221,19 @@ body {
 .grid-itens img {
     height: auto;
     max-width: 100%;
-    border: none;
-    border-radius: 0;
-    box-shadow: none;
-    border-radius: 5%;
+    border-radius: 1%;
 }
 
 .grid-itens img:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px #348ec288;
+    box-shadow: 0 8px 16px 00000088#;
 }
 
+.grid-itens h1 {
+    font-size: 1rem;
+}
+
+/* Fale Conosco */
 #fale-conosco {
     background-color: #348EC2;
     width: 100%;
@@ -165,26 +253,35 @@ body {
     font-weight: bolder;
 }
 
+/* Custom Icon */
+.custom-icon {
+    color: #000000bb; /* Alterar a cor conforme desejado */
+    font-size: 24px; /* Alterar o tamanho conforme desejado */
+}
+
+.custom-icon:hover {
+    color: #000000bb; /* Cor ao passar o mouse */
+}
+
+
 @media screen and (max-width: 767px) {
     .header {
-        flex-direction: row; /* Altera o layout para linha */
-        justify-content: space-around; /* Distribui o espaço entre os itens */
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
     }
+    
     .menu {
-        display: none; /* Oculta o menu em dispositivos móveis */
+        display: none;
         margin-bottom: 10px;
     }
 
     .material-symbols-outlined {
-        
-        display: block; /* Exibe o ícone do menu hamburguer em dispositivos móveis */
-        
+        display: block;
     }
 
     .elementor-button-link {
         display: block;
-
     }
 
     .logo-img {
@@ -194,10 +291,60 @@ body {
         margin-bottom: 15px;
         justify-self: center;
     }
-    
+
     .grid-itens {
         grid-template-columns: 1fr;
-        padding: 10vw 8vw 10vw 8vw; /* Mantém o espaçamento nas telas menores */
+        padding: 10vw 8vw;
+    }
+
+    #sobre img {
+        display: none;
+    }
+
+    #sobre {
+        width: 100vw;
+        max-width: 100%;
     }
     
+    .container-start {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .container-start-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .container-start-grid img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .container-start-grid-text-card {
+        display: grid;
+        grid-template-rows: auto auto;
+    }
+    
+    .container-start-grid-text-card p {
+        grid-row: 1;
+        margin: 0;
+        text-align: center;
+    }
+    
+    .list-group {
+        grid-row: 2;
+        list-style-type: none;
+        padding: 0;
+        margin: 2%;
+    }
+    
+    .list-group-item {
+        margin: 2% 0;
+        padding: 3%;
+        font-size: 1.2rem;
+    }
 }
