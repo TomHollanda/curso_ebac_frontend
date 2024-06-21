@@ -20,7 +20,10 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
     padding: 1.5%;
+    background-color: #F5F5F5;
+
 }
 
 /* Menu */
@@ -35,31 +38,43 @@ body {
 .menu li a {
     display: block;
     padding: 10px;
-    color: orange;
+    color: #F21D2F;
     font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.menu li a:hover {
+    color: #000000;
 }
 
 .material-symbols-outlined {
     display: none;
-    color: blue;
     padding: 10px;
     cursor: pointer;
-    background-color: rgba(153, 205, 50, 0.127);
+    background-color: #F21D2F;
     border-radius: 5px;
+    color: #F5F5F5;
 }
 
 .material-symbols-outlined:hover {
-    color: orange;
+    background-color: #F21D2F;
 }
 
 /* Buttons */
 .elementor-button-link {
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 700vw;
     color: #fff;
-    background-color: orange;
+    background-color: #F21D2F;
     border-radius: 50px;
     padding: 15px;
+}
+
+.elementor-button-link:hover {
+    color: #fff;
+    background-color: #FFF350;
+    color: #000000;
+    
 }
 
 /* Logo */
@@ -73,7 +88,8 @@ body {
 .container-section {
     width: 100vw;
     height: 60vh;
-    background-color: rgba(0, 0, 255, 0.1); 
+    background-color: #0388A6; 
+    color: #F5F5F5;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,9 +143,9 @@ body {
 }
 
 .banner button:hover {
-    background-color: #348EC2;
-    color:#F5F5F5;
-    border: 2px solid #f5f5f5;
+    background-color: #FFF350;
+    color:#000000;
+    border: none;
 
 }
 
@@ -151,33 +167,53 @@ body {
     object-fit: cover;
 }
 
+/*Container 3*/
 
-/* Media Queries */
-@media screen and (max-width: 767px) {
-    .container-section {
-        height: 55vh; /* Ajusta a altura para telas menores se necessário */
-    }
-
-    .custom-container {
-        max-width: 100vw;
-    }
-
-    .carousel-inner img {
-        max-height: 20vh; 
-    }
+.container-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    max-height: 100%;
+    gap: 16px;
+    padding: 7vw 8vw 14vw 8vw;
+    font-weight: lighter;
 }
 
+.container-grid img {
+    max-width: 50%;
+    margin-left: 22%;
+}
 
+.container-grid > div:first-child {
+    display: block;
+    align-items: 0 auto;
+    padding-right: 20%;
+}
 
+.container-grid h1 {
+    display: block;
+    align-items: 0 auto;
+    padding-bottom: 2%;
+}
 
+.container-grid > div:nth-child(2) > h1 {
+    text-align: center;
+}
 
+.container-grid h2 {
+    display: block;
+    align-items: 0 auto;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align:center;
+}
 
+.container-grid p {
+    text-align: justify;
+}
 
+/*Container 4*/
 
-
-/* Container Start */
-
-/* List Group - Nossos brinquedos*/
 .list-group {
     color: #F5F5F5;
     font-size: 2rem;
@@ -190,7 +226,7 @@ body {
 .list-group-item::before {
     content: "★";
     margin-right: 10px;
-    color: #FFF350;
+    color: #222673;
 }
 
 .list-group-item {
@@ -200,11 +236,6 @@ body {
     color: inherit;
 }
 
-/* Custom Container */
-
-
-
-/* Grid Items */
 .grid-itens {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -219,8 +250,8 @@ body {
 }
 
 .grid-itens img {
-    height: auto;
     max-width: 100%;
+    height: auto;
     border-radius: 1%;
 }
 
@@ -233,9 +264,21 @@ body {
     font-size: 1rem;
 }
 
-/* Fale Conosco */
+.btn-primary {
+    background-color: #F21D2F;
+    border: #F5F5F5;
+}
+
+.btn-primary:hover {
+    background-color: #FFF350;
+    color: #000000;
+}
+
+/*Container 5*/
+
 #fale-conosco {
-    background-color: #348EC2;
+    background-color: #0388A6;
+    color: #F5F5F5;
     width: 100%;
     max-height: 20%;
 }
@@ -245,26 +288,38 @@ body {
 }
 
 #fale-conosco h2 {
-    font-size: 2rem;
-}
-
-#fale-conosco h3 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: bolder;
 }
 
-/* Custom Icon */
+#fale-conosco h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
 .custom-icon {
-    color: #000000bb; /* Alterar a cor conforme desejado */
-    font-size: 24px; /* Alterar o tamanho conforme desejado */
+    color: #F5F5F5; 
+    font-size: 1.5rem;
 }
 
 .custom-icon:hover {
-    color: #000000bb; /* Cor ao passar o mouse */
+    color: #FFF350; /* Cor ao passar o mouse */
 }
 
 
-@media screen and (max-width: 767px) {
+footer {
+    background-color: #222673; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinhamento do texto */
+    padding: 20px; /* Espaçamento interno */
+    font-size: 14px; /* Tamanho da fonte */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Queries */
+@media screen and (max-width: 640px) {
     .header {
         flex-direction: row;
         justify-content: space-around;
@@ -305,6 +360,10 @@ body {
         width: 100vw;
         max-width: 100%;
     }
+
+    .container-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
     
     .container-start {
         display: flex;
@@ -316,7 +375,6 @@ body {
     .container-start-grid {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 20px;
     }
     
     .container-start-grid img {
@@ -346,5 +404,56 @@ body {
         margin: 2% 0;
         padding: 3%;
         font-size: 1.2rem;
+    }
+
+/* -- */
+    .container-section {
+        height: 55vh; 
+    }
+
+    .custom-container {
+        max-width: 100vw;
+    }
+
+    .carousel-inner img {
+        max-height: 20vh; 
+    }
+
+    .container-grid > div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 21%;
+
+    }
+
+    .container-grid > div:nth-child(2) > p {
+        display: none;
+    }
+
+    .container-grid > div:nth-child(2) > h2 {
+        margin-top: 5%;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .grid-itens {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    .container-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container-grid > div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 21%;
+    }  
+    .container-grid > div:nth-child(2) > p {
+        display: none;
+    }
+    .container-grid > div:nth-child(2) > h2 {
+        margin-top: 5%;
     }
 }
