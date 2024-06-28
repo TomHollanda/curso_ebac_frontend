@@ -47,7 +47,9 @@ body {
 
 @media screen and (max-width: 640px) {
     .container {
-        width: 90vw;
-        
+        width: 90vw; 
+    }
+    .form-control {
+        width: 60vw;
     }
 }
