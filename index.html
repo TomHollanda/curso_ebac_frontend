@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Página Web</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
+    
     <link rel="stylesheet" href="main.css">
 
 </head>
 
 <body>
     
-    <main>
+    <header>
         <nav class="navbar bg-warning navbar-dark navbar-expand-sm py-3 sticky-top">
             <div class="container">
                 <a href="" class="navbar-brand d-flex align-items-end">
@@ -52,8 +52,195 @@
                 </div>
             </div>
         </nav>
-        
+    </header>
 
+    <main>
+        <section class="container" id="home">
+            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-touch="false">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="https://as2.ftcdn.net/v2/jpg/07/74/26/25/1000_F_774262531_QeLqXFiqw41VelgvwUG4SX8eKrUN7RUv.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                    <img src="https://as1.ftcdn.net/v2/jpg/08/23/45/28/1000_F_823452854_8BZh1zBPVOJCKUA8eo2uZhOgiNNSzAqc.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="10000">
+                    <img src="https://as1.ftcdn.net/v2/jpg/07/62/49/58/1000_F_762495849_2FFY2xiMAirEMRRDeYwN0MhLLGdxK8GG.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                </div>
+        </section>
+
+        <section>
+            <div class="container py-5">
+                <h2>Cards</h2>
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+                    <div class="col py-3">
+                        <div class="card h-100">
+                            <img src="https://picsum.photos/300/300" alt="" class="card-img-top">
+                            <h4 class="card-header"> cabeçalho</h4>
+                            <div class="card-body">
+                                <h5 class="card-tilte">titulo</h5>
+                                <h6 class="card-subtitle">subtitulo</h6>
+                                <p class="card-text text-justify">
+                                    Die Erde ist ein weites Forschungsfeld, dessen Schichten uralte Geheimnisse verbergen. Irgendwo unter unseren Füßen erzählen die Gesteine Geschichten aus vergangenen Epochen und offenbaren Hinweise auf die Entstehung unseres Planeten.
+                                </p>
+                                <div class="card-footer">
+                                    <a href="#" class="card-link">
+                                        <button type="button" class="btn btn-info"> Mais
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col py-3">
+                        <div class="card h-100">
+                            <img src="https://picsum.photos/300/300" alt="" class="card-img-top">
+                            <h4 class="card-header"> cabeçalho</h4>
+                            <div class="card-body">
+                                <h5 class="card-tilte">titulo</h5>
+                                <h6 class="card-subtitle">subtitulo</h6>
+                                <p class="card-text">
+                                    Die Erde ist ein weites Forschungsfeld, dessen Schichten uralte Geheimnisse verbergen. Irgendwo unter unseren Füßen erzählen die Gesteine Geschichten aus vergangenen Epochen und offenbaren Hinweise auf die Entstehung unseres Planeten. Die Wissenschaft der Geologie lädt uns ein, diese Schichten zu erkunden, wo jeder Stein und jedes Mineral einen Teil der Erdgeschichte trägt.
+                                </p>
+                                <div class="card-footer">
+                                    <a href="#" class="card-link">
+                                        <button type="button" class="btn btn-info"> Mais
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col py-3">
+                        <div class="card h-100">
+                            <img src="https://picsum.photos/300/300" alt="" class="card-img-top">
+                            <h4 class="card-header"> cabeçalho</h4>
+                            <div class="card-body">
+                                <h5 class="card-tilte">titulo</h5>
+                                <h6 class="card-subtitle">subtitulo</h6>
+                                <p class="card-text">
+                                    Die Erde ist ein weites Forschungsfeld, dessen Schichten uralte Geheimnisse verbergen. Irgendwo unter unseren Füßen erzählen die Gesteine Geschichten aus vergangenen Epochen und offenbaren Hinweise auf die Entstehung unseres Planeten. Die Wissenschaft der Geologie lädt uns ein, diese Schichten zu erkunden, wo jeder Stein und jedes Mineral einen Teil der Erdgeschichte trägt.
+                                </p>
+                                <div class="card-footer">
+                                    <a href="#" class="card-link">
+                                        <button type="button" class="btn btn-info"> Mais
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col py-3">
+                        <div class="card h-100">
+                            <img src="https://picsum.photos/300/300" alt="" class="card-img-top">
+                            <h4 class="card-header"> cabeçalho</h4>
+                            <div class="card-body">
+                                <h5 class="card-tilte">titulo</h5>
+                                <h6 class="card-subtitle">subtitulo</h6>
+                                <p class="card-text">
+                                    Die Erde ist ein weites Forschungsfeld, dessen Schichten uralte Geheimnisse verbergen. Irgendwo unter unseren Füßen erzählen die Gesteine Geschichten aus vergangenen Epochen und offenbaren Hinweise auf die Entstehung unseres Planeten. Die Wissenschaft der Geologie lädt uns ein, diese Schichten zu erkunden, wo jeder Stein und jedes Mineral einen Teil der Erdgeschichte trägt.
+                                </p>
+                                <div class="card-footer">
+                                    <a href="#" class="card-link">
+                                        <button type="button" class="btn btn-info"> Mais
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col py-3">
+                        <div class="card h-100">
+                            <img src="https://picsum.photos/300/300" alt="" class="card-img-top">
+                            <h4 class="card-header"> cabeçalho</h4>
+                            <div class="card-body">
+                                <h5 class="card-tilte">titulo</h5>
+                                <h6 class="card-subtitle">subtitulo</h6>
+                                <p class="card-text">
+                                    Die Erde ist ein weites Forschungsfeld, dessen Schichten uralte Geheimnisse verbergen. Irgendwo unter unseren Füßen erzählen die Gesteine Geschichten aus vergangenen Epochen und offenbaren Hinweise auf die Entstehung unseres Planeten. Die Wissenschaft der Geologie lädt uns ein, diese Schichten zu erkunden, wo jeder Stein und jedes Mineral einen Teil der Erdgeschichte trägt.
+                                </p>
+                                <div class="card-footer">
+                                    <a href="#" class="card-link">
+                                        <button type="button" class="btn btn-info"> Mais
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col py-3">
+                        <div class="card h-100">
+                            <img src="https://picsum.photos/300/300" alt="" class="card-img-top">
+                            <h4 class="card-header"> cabeçalho</h4>
+                            <div class="card-body">
+                                <h5 class="card-tilte">titulo</h5>
+                                <h6 class="card-subtitle">subtitulo</h6>
+                                <p class="card-text">
+                                    Die Erde ist ein weites Forschungsfeld, dessen Schichten uralte Geheimnisse verbergen. Irgendwo unter unseren Füßen erzählen die Gesteine Geschichten aus vergangenen Epochen und offenbaren Hinweise auf die Entstehung unseres Planeten. Die Wissenschaft der Geologie lädt uns ein, diese Schichten zu erkunden, wo jeder Stein und jedes Mineral einen Teil der Erdgeschichte trägt.
+                                </p>
+                                <div class="card-footer">
+                                    <a href="#" class="card-link">
+                                        <button type="button" class="btn btn-info"> Mais
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
